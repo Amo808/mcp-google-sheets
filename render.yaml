@@ -13,6 +13,8 @@ services:
     envVars:
       - key: PYTHON_VERSION
         value: 3.11.11
+      - key: GOOGLE_SERVICE_ACCOUNT
+        value: eyJ3ZWIiOiB7ImNsaWVudF9pZCI6ICI4ODQ0ODUxNTcyOTgtdmwxMGc3NWxtcjZlMG5lb3FlM2FnYTF0Ym9jZDVqajkuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCAicHJvamVjdF9pZCI6ICJyb3VuZC1nYXNrZXQtNDU0ODIyLWU5IiwgImF1dGhfdXJpIjogImh0dHBzOi8vYWNjb3VudHMuZ29vZ2xlLmNvbS9vL29hdXRoMi9hdXRoIiwgInRva2VuX3VyaSI6ICJodHRwczovL29hdXRoMi5nb29nbGVhcGlzLmNvbS90b2tlbiIsICJhdXRoX3Byb3ZpZGVyX3g1MDlfY2VydF91cmwiOiAiaHR0cHM6Ly93d3cuZ29vZ2xlYXBpcy5jb20vb2F1dGgyL3YxL2NlcnRzIiwgImNsaWVudF9zZWNyZXQiOiAiR09DU1BYLXNlMEtjN2dLdU43Y2xYSllsbnpUTmJzWHZS
     # 👇 Важно
     pullRequestPreviewsEnabled: false
     skipGitCloneShallow: true
