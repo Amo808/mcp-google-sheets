@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: google-sheets-mcp
+    env: python
+    buildCommand: pip install .
+    startCommand: python -m mcp_google_sheets
+    repo: https://github.com/Amo808/mcp-google-sheets
+    branch: main
+    autoDeploy: true
+    buildFilter:
+      paths:
+        - "**/*"
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.11
+    # 👇 Важно
+    pullRequestPreviewsEnabled: false
+    skipGitCloneShallow: true
